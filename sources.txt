@@ -1,0 +1,17 @@
+Bootstrap Tutorials:
+https://www.youtube.com/watch?v=3e8p0R5-b5A&ab_channel=SA7MAN
+
+https://www.w3schools.com/bootstrap5/
+
+HTML Canvas Animation:
+https://chatgpt.com/
+
+Animate On Scroll Library:
+https://michalsnik.github.io/aos/
+
+Icons:
+https://icons8.com/line-awesome
+
+Launch API:
+https://thespacedevs.com/llapi
+

@@ -1,0 +1,332 @@
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022330;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 340px;
+    --font-base: "Bai Jamjuree"
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+/* Nav Bar */
+
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        /* background: linear-gradient(rgba(3, 65, 73, 0.8), rgba(3, 65, 73, 0.8)), url(../images/test.jpg); */
+        background: linear-gradient(rgba(3, 65, 73, 0.8), rgba(3, 65, 73, 0.8)), url(../images/codecanvas2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbarSpace {
+        /* background: linear-gradient(rgba(3, 65, 73, 0.8), rgba(3, 65, 73, 0.8)), url(../images/apollo11.jpg); */
+        /* background: linear-gradient(to bottom, #020024, #090979, #00d4ff); */
+        background: linear-gradient(to bottom, rgba(2, 0, 36, 0.8), rgba(9, 9, 121, 0.8)), url(../images/apollo11.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+
+    /* Content Div */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+/* button */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:visited {
+    background-color: var(--color-brand);
+    color: var(--color-base);
+    border-color: var(--color-brand);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 120%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 110%;
+}
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.05);
+}
+
+.imgProject {
+    transform: scale(0.95); 
+}
+
+
+/* Contact form */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+/* Social icons */
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+/* spacelaunches.html */
+
+.imgSpaceLaunch {
+    transform: scale(0.9);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+#spacelaunches {
+    background: linear-gradient(to bottom, #020024, #090979, #00d4ff);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-size: 1.3em;
+}
+
+#spacelaunches h3 {
+    color: var(--color-brand);
+}
+
+.flightDiv {
+    background-color: var(--color-base2);
+    border: 1px solid darkgray;
+}
+
+/* #target .col-lg-4 {
+    flex-grow: 1;
+} */
+
+.container {
+    max-width: 90%;
+}
+
+
+.spaceCard {
+    flex-basis: 33%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: initial; 
+    margin-bottom: 20px; 
+    padding-right: 20px; 
+}
+ /* Reset max-width to avoid conflicts */
+
+
+.spaceCard p {
+    background-color: var(--color-base2);
+    font-size: 0.9em;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .contentCanvas {
+    position: relative;
+    z-index: 2;
+    /* color: white; */
+    /* font-family: Arial, sans-serif; */
+    /* text-align: center; */
+    padding-top: 50px;
+  }
+
+  /*  Carousel  */
+
+/* .carousel {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+.carousel-card {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  display: none;
+}
+.carousel-card.active {
+  display: block;
+  transform: translateX(0);
+}
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+button:nth-child(2) {
+  right: 0;
+}
+
+.carousel button:last-of-type {
+    left: calc(100% - 23.4062px - 10px); 
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
