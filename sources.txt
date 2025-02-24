@@ -15,3 +15,7 @@ https://icons8.com/line-awesome
 Launch API:
 https://thespacedevs.com/llapi
 
+Favicon:
+https://favicon.io/favicon-generator/
+
+

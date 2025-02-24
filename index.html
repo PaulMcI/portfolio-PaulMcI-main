@@ -13,15 +13,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Line Awesome Icons -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;0,700&family=Limelight&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;0,700&family=Limelight&display=swap"
+        rel="stylesheet">
     <!-- Custom -->
-    <script src="assets/js/main.js" defer></script>  
-    <script src="assets/js/carousel.js" defer></script> 
-      
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/carousel.js" defer></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio | Paul McIsaac</title>
@@ -65,7 +73,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="spacelaunches.html">Launch API</a>
-                    </li>                     
+                    </li>
                 </ul>
             </div>
         </div>
@@ -87,10 +95,11 @@
                         <h1 class="display-4 fw-bold" data-aos="fade-up">Paul McIsaac - Portfolio</h1>
                         <h1><span class="text-brand">Software Developer - Full Stack NSCC</span></h1>
                         <h3 class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            I am a student in the Full Stack Application Development program at NSCC. Learning front and back end technologies to build quality web and mobile applications..
+                            I am a student in the Full Stack Application Development program at NSCC. Learning front and
+                            back end technologies to build quality web and mobile applications..
                         </h3>
                         <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="#projects" class="btn btn-brand me-3">Check out my latest projects =></a>
+                            <a href="#projects" class="btn btn-brand me-3">Check out my latest projects&nbsp;&nbsp;<i class="las la-arrow-circle-right h3"></i></a>
                         </div>
                     </div>
                 </div>
@@ -112,8 +121,31 @@
                     </div>
                 </div>
 
-                <div class="row gy-3">   
-                    
+                <div class="row gy-3">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 imgProject" src="./assets/images/Electron.gif"
+                                    alt="server-side code sample">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Electron Video Converter</h4>
+                                <p>
+                                    An Electron application that converts video files to different formats. The app
+                                    supports multiple video formats and allows users to select the desired output format
+                                    and resolution.
+                                </p>
+                                <div class="text-brand">
+                                    <p>Built with Electron, JavaScript</p>
+                                    <i class="las la-photo-video h3"></i>
+                                    <i class="lab la-html5 h3"></i>
+                                    <i class="lab la-css3 h3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
@@ -123,19 +155,21 @@
                             <div class="card-custom-content p-4">
                                 <h4>ACME Creatives</h4>
                                 <p>
-                                    A single-page website for the ACME Creatives digital marketing and design agency. The site 
-                                    conveys a sense of creativity and innovation, using bold yet professional colors and dynamic 
+                                    A single-page website for the ACME Creatives digital marketing and design agency.
+                                    The site
+                                    conveys a sense of creativity and innovation, using bold yet professional colors and
+                                    dynamic
                                     visuals to capture the spirit of a cutting-edge digital agency.
                                 </p>
                                 <div class="text-brand">
-                                    <p>Built using Bootstrap, HTML5, CSS3</p>
+                                    <p>Built with Bootstrap, HTML5, CSS3</p>
                                     <i class="lab la-bootstrap h3"></i>
-                                    <i class="lab la-html5 h3"></i>                                    
+                                    <i class="lab la-html5 h3"></i>
                                     <i class="lab la-css3 h3"></i>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
@@ -146,16 +180,41 @@
                             <div class="card-custom-content p-4">
                                 <h4>Three In A Row Game</h4>
                                 <p>
-                                    A replica of the <a class="link-custom" href="https://www.brainbashers.com/show3inarow.asp" target="_blank">Three-In-A-Row</a> game built 
-                                    with pure vanilla JavaScript. Initial game data is retrieved in JSON format using an API call, and all game components 
+                                    A replica of the <a class="link-custom"
+                                        href="https://www.brainbashers.com/show3inarow.asp"
+                                        target="_blank">Three-In-A-Row</a> game built
+                                    with pure vanilla JavaScript. Initial game data is retrieved in JSON format using an
+                                    API call, and all game components
                                     are constructed by working with the Document Object Model (DOM).
                                 </p>
                                 <div class="text-brand">
-                                    <p>Built using JavaScript, JSON, async API calls</p>                                   
-                                </div>  
+                                    <p>Built with JavaScript, JSON, async API calls</p>
+                                    <i class="las la-gamepad h3"></i>
+                                    <i class="las la-chess-board h3"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 imgProject" src="./assets/images/FlightsAPI.gif"
+                                    alt="server-side code sample">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>React - NestJS - MongoDB</h4>
+                                <p>
+                                    A React front end, NestJS API back end, and MongoDB database application. The application enables CRUD operations of a NASA Shuttle launch database.
+                                </p>
+                                <div class="text-brand">
+                                    <p>Built with React, NestJS, MongoDB</p>
+                                    <i class="lab la-react h3"></i>
+                                    <i class="las la-database h3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
 
                     <div class="col-md-6" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
@@ -166,17 +225,18 @@
                             <div class="card-custom-content p-4">
                                 <h4>Portfolio</h4>
                                 <p>
-                                    A collection of project samples, resume, goals, skills and technology demonstration. A collection of project samples, resume, goals, skills and technology demonstration. 
+                                    A collection of project samples, resume, goals, skills and technology demonstration.
+                                    A collection of project samples, resume, goals, skills and technology demonstration.
                                 </p>
-                                    <div class="text-brand">
-                                        <p>Built using Bootstrap, Vue.js, JavaScript, HTML5, CSS3</p>
-                                        <i class="lab la-bootstrap h3"></i>
-                                        <i class="lab la-html5 h3"></i>                                    
-                                        <i class="lab la-css3 h3"></i>
-                                    </div> 
+                                <div class="text-brand">
+                                    <p>Built with Bootstrap, Vue.js, JavaScript, HTML5, CSS3</p>
+                                    <i class="lab la-bootstrap h3"></i>
+                                    <i class="lab la-html5 h3"></i>
+                                    <i class="lab la-css3 h3"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>                      
+                    </div>
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
@@ -187,36 +247,20 @@
                             <div class="card-custom-content p-4">
                                 <h4>Halifax Transit - Bus GPS Map</h4>
                                 <p>
-                                    Dynamic bus tracking web map built using Leaflet and JavaScript. Halifax Transit bus location data is collected from an API in 
-                                    JSON format and reconfigured for plotting on a Halifax base map. Locations are updated continuously with repeated API calls for latest 
+                                    Dynamic bus tracking web map Built with Leaflet and JavaScript. Halifax Transit bus
+                                    location data is collected from an API in
+                                    JSON format and reconfigured for plotting on a Halifax base map. Locations are
+                                    updated continuously with repeated API calls for latest
                                     transit coordinate data.
                                 </p>
-                                    <div class="text-brand">
-                                        <p>Built using Leaflet: a JavaScript library for mobile-friendly interactive maps</p>
-                                        <i class="las la-map-marked h3"></i>
-                                    </div> 
-                            </div>
-                        </div>
-                    </div>                     
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4 imgProject" src="./assets/images/CharterAirlineDBDesign.jpg"
-                                    alt="server-side code sample">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Charter Airlines Database Design</h4>
-                                <p>
-                                    Relational database designed for an airline to manage passengers, crew, flights and aircraft relationships.
-                                </p>
                                 <div class="text-brand">
-                                    <p>Built using MS SQL-Server, Draw.IO</p>
-                                    <i class="las la-database h3"></i>                                   
-                                </div>  
+                                    <p>Built with Leaflet: a JavaScript library for mobile-friendly interactive maps
+                                    </p>
+                                    <i class="las la-map-marked h3"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
 
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
@@ -227,12 +271,14 @@
                             <div class="card-custom-content p-4">
                                 <h4>REST API Endpoint Development</h4>
                                 <p>
-                                    Developed endpoints using Node.js and Express.js for an online music store application. Express.js is a back end web application framework for building RESTful APIs with Node.js
+                                    Developed endpoints using Node.js and Express.js for an online music store
+                                    application. Express.js is a back end web application framework for building RESTful
+                                    APIs with Node.js
                                 </p>
                                 <div class="text-brand">
-                                    <p>Built using Node.js and Express.js</p>
-                                    <i class="lab la-node-js h3"></i>                                   
-                                </div>  
+                                    <p>Built with Node.js and Express.js</p>
+                                    <i class="lab la-node-js h3"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,8 +298,12 @@
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
                         <h5 class="text-brand">RESUME</h6>
-                        <h1>Education and Experience</h1>
-                        <p>	Student in Full Stack Application Development program at NSCC. Learning JavaScript, HTML/CSS, MS-SQL with a focus on building mobile applications.</p>
+                            <h1>Education and Experience</h1>
+                            <p>Motivated and detail-oriented Full-Stack Developer with a strong foundation in
+                                JavaScript, Node.js, and cross-platform development in Electron. Passionate about
+                                writing clean, maintainable code and collaborating in dynamic environments to develop
+                                user-centric software. Seeking an opportunity to apply my proven technical,
+                                communication, and problem-solving skills in a fast-paced, innovative team.</p>
                     </div>
                 </div>
 
@@ -267,12 +317,20 @@
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Software Developer</h4>
                                     <p class="text-brand mb-2">Federated Software (2016 - 2017)</p>
-                                    <p class="mb-0">
-                                        Designed, developed, and maintained high-quality database-driven software applications using C#, Asp.Net and MS SQL 
-                                        Server. Collaborated to analyze user requirements and translate them into functional, efficient solutions. Conducted 
-                                        thorough testing and debugging to ensure software quality and performance. Delivered projects on schedule while 
-                                        demonstrating expertise in front-end (HTML, CSS, JavaScript) and back-end (Node.js, C#, MS SQL Server) technologies.   
-                                    </p>
+                                    <ul>
+                                        <li>
+                                            Developed a volunteer tracking system to manage corporate volunteer
+                                            opportunities and shift scheduling
+                                        </li>
+                                        <li>
+                                            Collaborated to analyze user requirements and translate them into
+                                            functional, efficient solutions.
+                                        </li>
+                                        <li>
+                                            Delivered projects on schedule while demonstrating expertise in front-end
+                                            (HTML, CSS, ASP.NET) and back-end (C#, MS SQL Server) technologies.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -280,29 +338,41 @@
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Software Developer</h4>
                                     <p class="text-brand mb-2">Stantec Inc. (2008 - 2016)</p>
-                                    <p class="mb-0">
-                                        Designed, developed, and maintained high-quality database-driven software applications using C#, Asp.Net and MS SQL 
-                                        Server. Collaborated to analyze user requirements and translate them into functional, efficient solutions. Conducted 
-                                        thorough testing and debugging to ensure software quality and performance. Delivered projects on schedule while 
-                                        demonstrating expertise in front-end (HTML, CSS, JavaScript) and back-end (Node.js, C#, MS SQL Server) technologies.                                        
-                                    </p>
+                                    <ul>
+                                        <li>
+                                            As a member of the Informatics team in the Environmental Management group I
+                                            designed and built tools to manage environmental field data, track
+                                            application documents, and administer project equipment usage and billing
+                                        </li>
+                                        <li>
+                                            Collaborated to analyze user requirements and translate them into
+                                            functional, efficient solutions.
+                                        </li>
+                                        <li>
+                                            Designed, developed, and maintained high-quality database-driven software
+                                            applications using C#, ASP.NET and MS SQL Server.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
                             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>GIS Specialist</h4>
-                                    <p class="text-brand mb-2">Stantec Inc. (2001 - 2008)</p>
-                                    <p class="mb-0">                                        
-                                        Utilized geographic information systems (GIS) technologies to collect, analyze and visualize spatial data 
-                                        to support environmental management and infrastructure projects. 
-                                    </p>
-                                    <p>
-                                        Performed spatial data analysis, data visualization and created high-quality cartographic outputs to develop solutions for 
-                                        clients and teem members.                                      
-                                    </p>
+                                    <p class="text-brand mb-2">Jacques Whitford-AXYS Environmental (2001 - 2008)</p>
+                                    <ul>
+                                        <li>
+                                            Utilized geographic information systems (GIS) technologies (Esri ArcGIS) to
+                                            collect, analyze and visualize spatial data to support environmental
+                                            management and infrastructure projects.
+                                        </li>
+                                        <li>
+                                            Performed spatial data analysis, data visualization and created high-quality
+                                            cartographic outputs to develop solutions for clients and team members.
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>                            
+                            </div>
 
                         </div>
 
@@ -317,14 +387,25 @@
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Full Stack Application Development</h4>
                                     <p class="text-brand mb-2">Nova Scotia Community College (2024 - 2025)</p>
-                                    <p class="mb-0">
-                                        Completing an intensive program focused on designing, building, and deploying dynamic web and mobile applications. 
-                                        Gaining hands-on experience with both front-end and back-end technologies, including HTML, CSS, JavaScript, Vue.js, React, 
-                                        Node.js, and databases such as MS SQL Server and MongoDB. Developed a strong understanding of application lifecycle management, 
-                                        responsive design, API integration, and version control with Git. Participated in team projects utilizing Agile methodologies 
-                                        to simulate real-world development workflows. Will graduate with a capstone project showcasing full-stack development skills in 
-                                        creating scalable, user-friendly applications.                                                                                
-                                    </p>
+                                    <ul>
+                                        <li>Completing an intensive program focused on designing, building, and
+                                            deploying dynamic web and mobile applications.</li>
+                                        <li>Developed a strong understanding of application lifecycle management,
+                                            responsive design, API integration, and version control with Git.</li>
+                                        <li>Gaining hands-on experience with full stack technologies, including HTML,
+                                            CSS, JavaScript, React, Node.js, and databases such as MS SQL Server and
+                                            MongoDB.</li>
+                                        <li>Projects Include:
+                                            <ul>
+                                                <li>Developed a cross-platform, desktop video-conversion application
+                                                    using Electron.</li>
+                                                <li>Built a REST API with Node.js, Express, and MongoDB.</li>
+                                                <li>Developed a browser-based replica of an online game using pure
+                                                    JavaScript and DOM manipulation, creating interactive gameplay
+                                                    without external libraries.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -332,10 +413,16 @@
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Digital Cartography</h4>
                                     <p class="text-brand mb-2">Centre of Geographic Sciences (1999 - 2001)</p>
-                                    <p class="mb-0">
-                                        Program skills focused on collecting, managing, processing and presenting geospatial data using industry-leading 
-                                        software and tools. Emphasis on projects applying GIS desktop, mobile, open source and web geospatial technologies.                                    
-                                    </p>
+                                    <ul>
+                                        <li>
+                                            Program skills focused on collecting, managing, processing and presenting
+                                            geospatial data using industry-leading software and tools.
+                                        </li>
+                                        <li>
+                                            Emphasis on projects applying GIS desktop, mobile, open source and web
+                                            geospatial technologies.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -370,14 +457,16 @@
                             <h5 class="mt-4 mb-2">Programming Languages</h5>
                             <ul>
                                 <li>
-                                    <p>JavaScript: Skilled in building dynamic and interactive web applications using frameworks like React, Angular, and Vue.js</p>
+                                    <p>JavaScript: Skilled in building dynamic and interactive web applications using
+                                        frameworks like React, Angular, and Vue.js</p>
                                 </li>
                                 <li>
                                     <p>
-                                        C#, Python: Experienced in creating scalable applications and enterprise-level systems
+                                        C#, Python: Experienced in creating scalable applications and enterprise-level
+                                        systems
                                     </p>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
 
@@ -389,17 +478,18 @@
                             <h5 class="mt-4 mb-2">Frontend Development</h5>
                             <ul>
                                 <li>
+                                    <p>Electron: an open-source framework for building cross-platform desktop applications using web technologies (HTML, CSS, and JavaScript).</p>
+                                </li>                                
+                                <li>
                                     <p>
-                                        Bootstrap/Tailwind CSS, HTML5 & CSS3: Expertise in building responsive, accessible, and visually appealing interfaces.
+                                        Bootstrap/Tailwind CSS, HTML5 & CSS3: Expertise in building responsive,
+                                        accessible, and visually appealing interfaces.
                                     </p>
                                 </li>
-                                <li>
-                                    <p>Responsive Design: Knowledgeable in creating web pages that work seamlessly across devices and screen sizes.</p>
-                                </li>
-                            </ul>                            
+                            </ul>
                         </div>
-                    </div>       
-                    
+                    </div>
+
                     <div class="col-md-4" data-aos="fade-up">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
@@ -417,10 +507,15 @@
                                         Express.js: Used to create lightweight and efficient server-side applications
                                     </p>
                                 </li>
-                            </ul>                            
+                                <li>
+                                    <p>
+                                        Nest.js: Used to create RESTful services for web and mobile applications.
+                                    </p>
+                                </li>                                
+                            </ul>
                         </div>
-                    </div> 
-                    
+                    </div>
+
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
@@ -429,14 +524,15 @@
                             <h5 class="mt-4 mb-2">Database Design</h5>
                             <ul>
                                 <li>
-                                    <p>Relation database design and development using MS SQL Server and MongoDB</p>
+                                    <p>Relational database design and development using MS SQL Server and MongoDB</p>
                                 </li>
                                 <li>
-                                    <p>Proficient in designing schemas, database normalization and complex query generation</p>
+                                    <p>Proficient in designing schemas, database normalization and complex query
+                                        generation</p>
                                 </li>
                             </ul>
                         </div>
-                    </div>                    
+                    </div>
 
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
@@ -449,16 +545,17 @@
                                     <p>Experienced with Windows and Linux operating systems</p>
                                 </li>
                                 <li>
-                                    <p>Capable of server configuration and task automation using Bash, Batch and PowerShell scripting</p>
+                                    <p>Capable of server configuration and task automation using Bash, Batch and
+                                        PowerShell scripting</p>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
 
-                </div>                
+                </div>
 
-                    <!-- Carousel Start-->
-                    <!-- <div id="app">
+                <!-- Carousel Start-->
+                <!-- <div id="app">
                         <div class="carousel">
                           <div 
                             class="carousel-card" 
@@ -475,8 +572,8 @@
                           <button @click="nextSlide">›</button>
                         </div>
                       </div> -->
-                                          
-                    <!-- Carousel End -->                
+
+                <!-- Carousel End -->
 
                 <!-- <div class="row">
 
@@ -631,12 +728,14 @@
                             <h5 class="mt-4 mb-2">Technical Mastery</h5>
                             <ul>
                                 <li>
-                                    <p>Develop advanced proficiency in JavaScript, Vue.js, React, Python, T-SQL, HTML/CSS</p>
+                                    <p>Develop advanced proficiency in JavaScript, Vue.js, React, Python, T-SQL,
+                                        HTML/CSS</p>
                                 </li>
                                 <li>
-                                    <p>Earn certifications: AWS Certified Developer, Microsoft Azure Fundamentals, Google Professional Cloud Developer</p>
+                                    <p>Earn certifications: AWS Certified Developer, Microsoft Azure Fundamentals,
+                                        Google Professional Cloud Developer</p>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
 
@@ -651,9 +750,10 @@
                                     <p>Contribute to open-source projects</p>
                                 </li>
                                 <li>
-                                    <p>Personal projects: develop and launch a machine learning model to solve real-world problems like predictive analytics or image recognition</p>
+                                    <p>Personal projects: develop and launch a machine learning model to solve
+                                        real-world problems like predictive analytics or image recognition</p>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
 
@@ -668,7 +768,8 @@
                                     <p>Showcase interactive and polished live demos for all portfolio projects</p>
                                 </li>
                                 <li>
-                                    <p>Document and present detailed case studies of completed projects, including challenges, solutions, and impacts</p>
+                                    <p>Document and present detailed case studies of completed projects, including
+                                        challenges, solutions, and impacts</p>
                                 </li>
                             </ul>
                         </div>
@@ -678,70 +779,7 @@
             </div>
         </section>
 
-        <!-- Goals End -->        
-
-        <!-- Blog Start -->
-
-        <!-- <section id="blogs" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h5 class="text-brand">BLOG</h6>
-                            <h1>Latest Blog Posts</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/em_1.jpg"
-                                    alt="server-side code sample">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">December 10, 2024</p>
-                                <h5 class="mb-4">Design bootstrap website design</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/em_2.jpg"
-                                    alt="server-side code sample">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">December 10, 2024</p>
-                                <h5 class="mb-4">Design bootstrap website design</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/em_3.jpg"
-                                    alt="server-side code sample">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">December 10, 2024</p>
-                                <h5 class="mb-4">Design bootstrap website design</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>         -->
-
-        <!-- Blog End -->
+        <!-- Goals End -->
 
         <!-- Contact form Start -->
 
@@ -753,33 +791,55 @@
                         <h5 class="text-brand">CONTACT</h5>
                         <h1>Let's get in contact:</h1>
                         <h5 class="pt-2">
-                            Paul McIsaac &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                            Email:&nbsp; <a href="mailto:pmcisaac@gmail.com">pmcisaac@gmail.com</a>&nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;
-                            Tel: 782-414-4020
+                            <p>
+                                Thank you for visiting my portfolio. I hope you enjoyed learning about my projects and
+                                experience. I am passionate about software development and excited to continue learning
+                                and growing in the field. I am always looking for new opportunities to collaborate and
+                                contribute to innovative projects.
+                            </p>
+                            <p>
+                                Paul McIsaac
+                            </p>
+                            <p>
+                                <a class="link-custom" href="mailto:pmcisaac@gmail.com">pmcisaac@gmail.com</a>
+                            </p>
+                            <p>
+                                <a class="link-custom" href="https://www.linkedin.com/in/paul-mcisaac-033b01333/" target="_blank">
+                                    <!-- <img src="./assets/images/LinkedIn_icon.svg" alt="LinkedIn"
+                                        style="width: 25px; height: 25px;"> -->
+                                        <i class="lab la-linkedin h3"></i>
+                                    &nbsp;LinkedIn
+                                </a>
+                            </p>
+
                         </h5>
                     </div>
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                        <form action="#" class="row g-lg-3 gy-3">
+
+                        
+
+                        <form
+                        action="https://formspree.io/f/xdkavpqk"
+                        class="row g-lg-3 gy-3"
+                        target="_top"
+                        method="POST">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Enter your name">
+                                <input  id="name" name="name" required class="form-control" placeholder="Enter your name">
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>    
+                                <input  id="email" name="email" required class="form-control" placeholder="Email">
+                            </div>
                             <div class="form-group col-md-12">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>   
-                            <div class="form-group col-md-12">
-                                <textarea name="" rows="4" class="form-control" placeholder="Message"></textarea>
-                            </div>    
+                                <textarea id="message" name="message" required rows="4" class="form-control" placeholder="Message"></textarea>
+                            </div>
                             <div class="form-group col-md-12 d-grid">
                                 <button type="submit" class="btn btn-brand">Contact me</button>
-                            </div>                                                                                                          
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>           
+        </section>
 
         <!-- Contact form End -->
 
@@ -790,18 +850,22 @@
             <div class="container">
                 <div class="row gy-4 justify-content-between">
                     <div class="col-auto">
-                        <p class="mb-0">Copyright 2024</p>
+                        <p class="mb-0">Copyright 2025</p>
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
-                            <a href="#"><i class="lab la-twitter"></i></a>
-                            <a href="#"><i class="lab la-instagram"></i></a>
-                            <a href="#"><i class="lab la-github"></i></a>
+
+                            <a href="https://www.linkedin.com/in/paul-mcisaac-033b01333/" target="_blank">
+                                <i class="lab la-linkedin h4"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/paul-mcisaac-033b01333/" target="_blank">
+                                <i class="lab la-github h4"></i>
+                            </a>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
-            
+
         </footer>
 
         <!-- Footer end -->
