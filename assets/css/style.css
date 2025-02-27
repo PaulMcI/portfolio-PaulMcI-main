@@ -9,6 +9,17 @@
     --font-base: "Bai Jamjuree"
 }
 
+[data-theme="dark"] {
+    --color-body: #1a2b2e;   /* Darker text for readability */
+    --color-heading: #253d42; /* Slightly muted heading */
+    --color-base: #f4fbfc;    /* Light background */
+    --color-base2: #d9ecef;   /* Softer secondary background */
+    --color-brand: #4a6400;   /* Deeper green for contrast */
+    --color-brand2: #6d8d00;  /* Vibrant accent */
+    --sidbar-width: 340px;
+    --font-base: "Bai Jamjuree"
+}
+
 body {
     background-color: var(--color-base2);
     color: var(--color-body);

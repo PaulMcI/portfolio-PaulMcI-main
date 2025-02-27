@@ -17,3 +17,20 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+const toggleButton = document.getElementById("theme-toggle");
+
+// Check for saved user preference
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  document.documentElement.setAttribute("data-theme", savedTheme);
+}
+
+// Toggle theme function
+toggleButton.addEventListener("click", () => {
+  let currentTheme = document.documentElement.getAttribute("data-theme");
+  let newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  document.documentElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme); // Save preference
+});
